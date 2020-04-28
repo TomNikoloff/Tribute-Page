@@ -7,47 +7,67 @@
    <style>
      html{
        font-size: 10px;
-       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
      }
      body {
-       margin: 20px;
+       font-size: 1.6rem;
        line-height: 1.5;
+       text-align: center;
+       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+       margin:0;
      }
      #title {
-       text-align: center;
-       padding-top:50px;
        font-size: 4rem;
      }
+     @media (max-width: 460px) {
+       #title {
+         font-size: 3.5rem;
+         line-height: 1.2;
+       }
+     }
      #main {
+       margin: 30px 8px;
        background-color: lightgrey;
        padding: 15px;
        border-radius: 5px;
-
      }
-     p {
-       text-align: center;
+     @media (max-width: 460px) {
+       #main {
+         margin: 0;
+       }
      }
      img {
        max-width:50%;
        display:block;
        height: auto;
        margin: 0 auto;
-       padding: 20px 0px 0px 0px;
      }
      #img-div {
        background-color:white;
        border-radius: 5px;
      }
+     #inner-div {
+       padding-top: 10px;
+     }
      #img-caption {
-       margin: 15px 0 5px 0;
        font-size: 1.5rem;
-       text-align: center;
+       padding: 5px;
      }
 
      @media (max-width: 460px) {
        #img-caption {
          font-size: 1.4rem;
        }
+     }
+     #tribute-info {
+       font-size: 1.5rem;
+     }
+     ul {
+       max-width: 550px;
+       margin: 0 auto 50px auto;
+       text-align: center;
+       }
+     li {
+       margin: 16px 0;
      }
    </style>
    </head>
@@ -58,14 +78,29 @@
          <p>In the middle of difficulty lies opportunity</p>
        </div>
        <figure id="img-div">
-         <img id="image"
-          src="https://wallpapercave.com/wp/DiFt1cm.jpg"
-          alt="Albert Einstein sitting with his hands locked together"
-          />
+        <div id="inner-div">
+          <img id="image"
+           src="https://wallpapercave.com/wp/DiFt1cm.jpg"
+           alt="Albert Einstein sitting with his hands locked together"
+           />
+         </div>
           <figcaption id="img-caption">
             If you can't explain it simply, you don't understand it well enough.
           </figcaption>
         </figure>
+        <section id="tribute-info">
+          <h3 id="headline"> Here's a time line of Albert Einstein</h3>
+          <ul>
+            <li><strong>1879</strong> - Born in Ulm, in the Kingdom of Württemberg in the German Empire,</li>
+            <li><strong>1880</strong> - The family moved to Munich, where Einstein's father and his uncle Jakob founded Elektrotechnische Fabrik J. Einstein & Cie, a company that manufactured electrical equipment based on direct current.</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </section>
      </main>
    </body>
 </html>
